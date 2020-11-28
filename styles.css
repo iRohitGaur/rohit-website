@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #0099ff;
+    --secondary-color: #66ccff;
+    --footer-color: #2c3e50;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0px;
+}
+
+hr {
+    margin: 2rem 0rem;
+}
+
+/** container **/
+.container {
+    padding: 0rem 1rem;
+}
+
+.container .vertical-spacer-padding {
+    padding: 1rem 0rem;
+}
+
+.container .vertical-spacer-margin {
+    margin: 1.5rem 0rem;
+}
+
+.container .horizontal-spacer {
+    margin: 0rem 1rem;
+}
+
+.container-center {
+    max-width: 600px;
+    margin: auto;
+}
+
+/** links **/
+.link {
+    text-decoration: none;
+    padding: 1rem 1rem;
+}
+
+.link:hover {
+    color: var(--secondary-color) !important;
+}
+
+.link-primary {
+    color: white;
+    background-color: var(--primary-color);
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.link-primary:hover {
+    color: var(--primary-color);
+    background-color: transparent;
+    border-radius: 0.5rem;
+    border: 1px solid var(--primary-color);
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.link-secondary {
+    color: white;
+    background-color: transparent;
+    border-radius: 0.5rem;
+    border: 1px solid white;
+    padding: 0.75rem;
+    margin-right: 20px;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.link-secondary:hover {
+    color: white !important;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+/** lists **/
+.list-bullet-none {
+    list-style: none;
+}
+
+.list-item-inline {
+    display: inline;
+    padding: 0rem 0.5rem;
+}
+
+/** navigation **/
+.navigation {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.5rem;
+}
+
+.navigation .nav-floater {
+    display: inline-block;
+}
+
+.navigation .nav-buttons {
+    float: right;
+}
+
+.navigation .link {
+    color: white;
+}
+
+.navigation .link-active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.navigation ul {
+    padding-inline-start: 0px;
+}
+
+.navigation li {
+    padding: 0px;
+}
+
+/** header **/
+.hero {
+    background-color: var(--secondary-color);
+    padding: 3rem;
+    color: white;
+}
+
+.hero .hero-img {
+    width: 15rem;
+    max-width: 60%;
+    display: block;
+    margin: auto;
+}
+
+.hero .hero-heading {
+    text-align: center;
+}
+
+.hero .hero-subheading {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/** sections **/
+.section {
+    padding: 2rem;
+}
+
+.section h1 {
+    text-align: center;
+    color: var(--footer-color);
+}
+
+.section h2 {
+    margin: 0;
+}
+
+.section h2, small, p {
+    color: var(--footer-color);
+    text-align: justify;
+    padding-right: 20px;
+}
+
+.section-blue {
+    background-color: var(--secondary-color);
+}
+
+.section .row {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.section .column {
+    flex: 50%;
+    padding: 20px 0px;
+}
+
+.section .row-portfolio {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.section .column-portfolio {
+    padding: 20px 0px;
+}
+
+.section .column-portfolio:first-child {
+    padding-top: 6px;
+    padding-right: 20px;
+}
+
+.section .column-portfolio:last-child {
+    padding-top: 0px;
+    flex: 80%;
+}
+
+.section .item-focus {
+    flex: 50%;
+    transition: flex 0.5s ease-in-out;
+}
+
+.section .item-focus:hover {
+    flex: 60%;
+    transition: flex 0.5s ease-in-out;
+}
+
+/* On screens that are 992px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 992px) {
+    .section .row {
+        flex-direction: column;
+    }
+    .section .row-portfolio {
+        flex-direction: column;
+    }
+}
+
+/** footer **/
+.footer {
+    background-color: var(--footer-color);
+    padding: 2rem;
+    text-align: center;
+    color: white;
+}
+
+.footer .btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: transparent;
+    border: 0.125rem solid transparent;
+    border-color: white;
+    border-radius: 100%;
+    padding: 0.15rem 0.15rem;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.footer .btn:hover {
+    color: var(--footer-color);
+    background-color: white;
+}
+
+.footer ul {
+    padding-inline-start: 0px;
+}
+
+/** divider **/
+.divider-custom {
+    margin: 1.25rem 0 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--footer-color);
+}
+
+.divider-custom .divider-custom-line {
+    width: 100%;
+    max-width: 7rem;
+    height: 0.25rem;
+    border-radius: 1rem;
+}
+
+.divider-custom .divider-custom-line:first-child {
+    margin-right: 1rem;
+}
+
+.divider-custom .divider-custom-line:last-child {
+    margin-left: 1rem;
+}
+
+.divider-custom .divider-custom-icon {
+    font-size: 2rem;
+}
+
+.divider-custom.divider-light .divider-custom-line {
+    background-color: var(--footer-color);
+}

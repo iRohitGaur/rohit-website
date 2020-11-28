@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component Library</title>
+    <link href="/styles.css" rel="stylesheet" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Rohit Gaur | iOS & Web Developer" />
+    <meta property="og:description" content="Motivated. Driven. Hard working. Fast learner." />
+    <meta property="og:url" content="https://rohit.xyz" />
+    <meta property="og:image" content="https://rohit.xyz/assets/img/screenshare.png" />
+
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Block elements => When the element takes the entire row (eg: h1.., div, p) -->
+    <!-- Inline elements => When the element does not take the entire row (eg: small, a) -->
+
+    <h1>component library</h1> <!--  -->
+    <p>This library is made to serve a single purpose of bringing consitency in the projects.</p>
+
+    <hr>
+
+    <h2>@typography</h2> <!--  -->
+
+    <h1>This is the biggest heading</h1>
+    <h2>This is the second biggest heading</h2>
+    <p>This is a paragraph</p>
+    <small>This is comparatively smaller</small>
+
+    <hr>
+
+    <h2>@container</h2> <!--  -->
+
+    <h3>fluid container</h3>
+    <div class="container">This is a fluid container and it will go till the end of the page</div>
+
+    <h3>center container</h3>
+    <div class="container-center">This is a centered container and it will go till the specified width</div>
+
+    <hr>
+
+    <h2>@links</h2> <!--  -->
+
+    <a class="link link-primary" href="/">Primary Link</a>
+    <a class="link link-secondary" href="/">Secondary Link</a>
+
+    <hr>
+
+    <h2>@lists</h2> <!--  -->
+
+    <h3>unordered list</h3>
+    <p>This list will not have the bullet</p>
+    <ul class="list-bullet-none">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <h3>unordered inline list</h3>
+    <ul class="list-bullet-none">
+        <li class="list-item-inline">Inline Item 1</li>
+        <li class="list-item-inline">Inline Item 2</li>
+        <li class="list-item-inline">Inline Item 3</li>
+    </ul>
+
+    <h3>reverse ordered list</h3>
+    <ol reversed>
+        <li>milk</li>
+        <li>tea</li>
+        <li>bread</li>
+    </ol>
+
+    <hr>
+
+    <h2>@nav</h2> <!--  -->
+
+    <nav class="navigation container">
+        <div class="nav-floater">
+            <a href="#page-top">
+                <img height="56" src="/images/logo.gif">
+            </a>
+        </div>
+        <div class="nav-floater nav-buttons">
+            <ul class="list-bullet-none">
+                <li class="list-item-inline">
+                    <a class="link" href="/">ABOUT</a>
+                </li>
+                <li class="list-item-inline">
+                    <a class="link" href="/">PORTFOLIO</a>
+                </li>
+                <li class="list-item-inline">
+                    <a class="link" href="/">BLOG</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <hr>
+
+    <h2>@header</h2> <!--  -->
+
+    <header class="hero">
+        <img class="hero-img" src="/images/rohit.svg" />
+        <h1 class="hero-heading">ROHIT GAUR</h1>
+        <!-- Icon Divider-->
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <p class="hero-subheading">iOS & Web Developer - Teacher - Wildlife Photographer</p>
+    </header>
+
+    <hr>
+
+    <h2>@section</h2> <!--  -->
+
+    <section class="section">
+        <div class="container container-center">
+            <h1>white section</h1>
+            <p>This will have white background</p>
+        </div>
+    </section>
+
+    <section class="section section-blue">
+        <div class="container container-center">
+            <h1>blue section</h1>
+            <p>This will have light blue background</p>
+        </div>
+    </section>
+
+    <hr>
+
+    <h2>@footer</h2> <!--  -->
+    <footer class="footer">
+        <h1 class="footer-header">AROUND THE WEB</h1>
+        <ul class="list-bullet-none">
+            <li class="list-item-inline">
+                <a class="btn" href="https://apps.apple.com/us/developer/rohit-gaur/id1382308402"><i class="fab fa-fw fa-apple"></i></a>
+            </li>
+            <li class="list-item-inline">
+                <a class="btn" href="https://github.com/iRohitGaur"><i class="fab fa-fw fa-github"></i></a>
+            </li>
+            <li class="list-item-inline">
+                <a class="btn" href="https://www.instagram.com/iRohitGaur"><i class="fab fa-fw fa-instagram"></i></a>
+            </li>
+            <li class="list-item-inline">
+                <a class="btn" href="https://www.facebook.com/iRohitGaur"><i class="fab fa-fw fa-facebook-f"></i></a>
+            </li>
+            <li class="list-item-inline">
+                <a class="btn" href="https://twitter.com/iRohitGaur"><i class="fab fa-fw fa-twitter"></i></a>
+            </li>
+            <li class="list-item-inline">
+                <a class="btn" href="https://www.linkedin.com/in/iRohitGaur"><i class="fab fa-fw fa-linkedin-in"></i></a>
+            </li>
+            <li class="list-item-inline">
+                <a class="btn" href="https://www.youtube.com/alrodev"><i class="fab fa-fw fa-youtube"></i></a>
+            </li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>
