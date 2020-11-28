@@ -221,6 +221,10 @@ hr {
     .section .row-portfolio {
         flex-direction: column;
     }
+
+    .navigation .link {
+        padding: 0.2rem;
+    }
 }
 
 /** footer **/
