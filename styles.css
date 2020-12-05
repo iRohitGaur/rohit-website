@@ -26,6 +26,7 @@ hr {
 
 .container .vertical-spacer-padding {
     padding: 1rem 0rem;
+    display: flex;
 }
 
 .container .vertical-spacer-margin {
@@ -37,7 +38,7 @@ hr {
 }
 
 .container-center {
-    max-width: 600px;
+    max-width: 800px;
     margin: auto;
 }
 
@@ -87,9 +88,15 @@ hr {
 /** lists **/
 .list-bullet-none {
     list-style: none;
+    padding: 0px;
 }
 
 .list-item-inline {
+    display: inline;
+    padding: 0rem 0.5rem;
+}
+
+.list-item-inline-footer {
     display: inline;
     padding: 0rem 0.5rem;
 }
@@ -203,6 +210,10 @@ hr {
     flex: 80%;
 }
 
+.section .action-buttons {
+    margin: 0.5rem;
+}
+
 .section .item-focus {
     flex: 50%;
     transition: flex 0.5s ease-in-out;
@@ -211,20 +222,6 @@ hr {
 .section .item-focus:hover {
     flex: 60%;
     transition: flex 0.5s ease-in-out;
-}
-
-/* On screens that are 992px wide or less, make the columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 992px) {
-    .section .row {
-        flex-direction: column;
-    }
-    .section .row-portfolio {
-        flex-direction: column;
-    }
-
-    .navigation .link {
-        padding: 0.2rem;
-    }
 }
 
 /** footer **/
@@ -291,4 +288,39 @@ hr {
 
 .divider-custom.divider-light .divider-custom-line {
     background-color: var(--footer-color);
+}
+
+/* On screens that are 992px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .list-bullet-none {
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .list-item-inline {
+        display: block;
+        padding: 0rem 0.5rem;
+    }
+
+    .section .row {
+        flex-direction: column;
+    }
+
+    .section .row-portfolio {
+        flex-direction: column;
+    }
+
+    .section .vertical-spacer-padding {
+        flex-direction: column;
+        width: fit-content;
+    }
+
+    .section .action-buttons {
+        margin: 1rem 0;
+    }
+
+    .navigation .link {
+        padding: 0.2rem;
+    }
 }
